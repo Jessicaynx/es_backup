@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #copy configuration scripts from AWS S3 and execute it
-aws s3 cp s3://$S3_BUNDLE_NAME/setup-config.sh /chengguan/setup-config.sh \
+aws s3 cp s3://$S3_BUNDLE_NAME/setup-config.sh /backup/setup-config.sh \
 && chmod 755 /backup/setup-config.sh \
 && . /backup/setup-config.sh
 
